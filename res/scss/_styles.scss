@@ -1,0 +1,23 @@
+body {
+  background: $color-bg $bgimg; // optional URI in var
+	line-height: $line-h;
+}
+
+header, footer {
+  //background: $color-main;
+  color: $color-bg;
+	position: relative;
+}
+.wrapheader, .wrapfooter {
+	background-color: $color-main;
+	//outline: $test;
+}
+
+section *, .submenu *, .relative * {
+	font-size: $f-size;
+}
+main {
+	display: block;
+	background-color: $color-bg;
+	margin-top: .25rem;
+}

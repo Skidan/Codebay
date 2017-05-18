@@ -1,0 +1,53 @@
+html, body, .wrapper, .wrapheader, .wrapmain, .wrapfooter {
+	width: 100%;
+}
+.clear, .mainmenuclear, .headerclear, .bcclear, .contentclear, .footerclear {
+	clear: both;
+}
+body {
+	font-family: $sans-serif;
+}
+
+html {
+	font-size: $f-size;
+}
+
+/* Default styles */
+.mainmenuclear, .bcclear, .headerclear {
+	display: none;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 480px) {
+	.mainmenuclear, .bcclear, .headerclear {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 481px) and (max-width: 940px) {
+	.mainmenuclear, .bcclear, .headerclear {
+		display: block;
+	}
+}
+
+@media screen and (min-width: 941px) and (max-width: 1280px) {
+	.mainmenuclear, .bcclear, .headerclear {
+		display: block;
+	}
+	header, main, footer, .breadcrumbs {
+		margin: 0 auto;
+		width: 940px;
+	}
+	main {
+		
+	}
+	section {
+		display: inline-block;
+		vertical-align: top;
+		float: left;
+		margin-top: .5rem;
+		padding: 0 .5rem;
+		width: calc(940px - 17.25rem); //TESremT
+	}
+}

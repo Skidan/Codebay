@@ -1,0 +1,11 @@
+html, body, .wrapper, .wrapmain {
+  height: 100%;
+}
+
+.wrapper {
+  display: table;
+}
+
+.wrapmain {
+  display: table-row;
+}

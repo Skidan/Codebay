@@ -1,0 +1,43 @@
+.logo {
+	display: inline-block;
+	vertical-align: top;
+	float: left;
+  height: $logosize;
+	width: $logosize / 3 * 5;
+	margin-left: .2rem;
+  background: url(../img/logo-big.png) center center no-repeat;
+  background-size: contain;
+} 
+
+@media screen and (min-width: 481px) and (max-width: 1280px) {
+	.logo {
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 1rem;
+		width: $logosize * 2;
+		height: $logosize * 2;
+		outline: .5rem solid $color-main;
+		border-bottom: 1px dashed $color-bgdark;
+		border-right: 1px dashed $color-bgdark;
+		border-left: 1px dashed $color-bgdark;
+		background: $color-main url(../img/cb.png) center center no-repeat;
+		background-size: contain;
+		box-shadow: 0 .4rem 2rem $color-dark;
+		Transition: bacground-color, .5s;
+		&:hover {
+			background-color: lighten($color-main, 10%);
+			outline-color: lighten($color-main, 10%);
+			transition: background-color, .2s;
+			//cursor: pointer;
+		}
+	}
+}
+
+@media screen and (min-width: 1281px) {
+	.logo {
+		display: block;
+		float: none;
+		width: auto;
+	}
+}

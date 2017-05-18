@@ -1,0 +1,179 @@
+/* default styles */
+.menunav {
+	display: block;
+}
+.menubutton {
+	display: none;	
+} 
+.mainmenu {
+	display: block;
+}
+.menuitem {
+	display: block;
+	text-align: center;
+	background-color: $color-main;
+	&:hover {
+		background-color: $color-light;
+	}
+}
+.menuitem a {
+	display: block;
+	font-size: $f-size;
+	line-height: $line-h * 2;
+	padding: $menupadding;
+	color: $color-bg;
+	text-decoration: none;
+	text-transform: uppercase;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+
+/* smallest styles - mobile */
+@media screen and (max-width: 480px) {
+.menubutton {
+	display: inline-block;
+	vertical-align: top;
+	position: absolute;
+	right: 0;
+	top: 0;
+  width: 2rem;
+  height: 2rem;
+  line-height: 1.6rem;
+  font-size: $f-size * 2;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  margin: .5rem;
+  color: $color-bg;
+  border-radius: .5rem;
+	background-color: lighten($color-main, 5%);
+  &:hover {
+  background-color: $color-light;
+  cursor: pointer;
+  box-shadow: 0 0 .5rem darken($color-main, 10%);
+  }
+  &::selection {
+    background: transparent;
+  }
+}
+.mainmenu {
+  //width: 200px;
+  display: none;
+}
+.showmainmenu {
+  font-size: $f-size;
+  display: inline-block;
+	position: absolute;
+	right: 0;
+	top: $logosize;
+  vertical-align: top;
+  list-style: none;
+  background: $color-main;
+  box-shadow: 0 .2rem .8rem darken($color-main, 10%);
+}
+.menuitem {
+	transition: background .3s;
+	text-align: left;
+  &:hover {
+		transition: background .5s;
+  }
+}
+.menuitem a {
+  &:active {
+    color: $color-bg;
+  }
+}
+}
+
+/* medium styles - tab - approximately */
+@media screen and (min-width: 481px) and (max-width: 700px){	
+.mainmenu {
+	display: inline-block;
+	vertical-align: top;
+	float: right;
+	position: relative;
+}	
+.menuitem {
+	display: inline-block;
+	list-style: none;
+	&:hover {
+		background-color: $color-main;
+	}
+}
+.menuitem a {
+	display: inline-block;
+	vertical-align: top;
+	border-bottom: $menuborder solid $color-main;
+	transition: border-bottom-color, .8s;
+	&:hover {
+		background-color: $color-main;
+		border-bottom-color: $color-light;
+		transition: border-bottom-color, .3s;
+	}
+	&:active {
+		background-color: darken($color-main, 3%);
+		border-bottom-color: darken($color-light, 3%);
+		color: $color-bg;
+	}
+	&.current {
+		background-color: $color-light;
+		border-bottom-color: $color-light;
+	}
+	&.current:hover{
+		border-bottom-color: $color-main;
+		transition: border-bottom-color, .3s;
+	}
+	&.current:active{
+		background-color: darken($color-light, 3%);
+		border-bottom-color: darken($color-main, 3%);
+	}
+}
+}
+
+/* big tabs & comp in window mode */
+@media screen and (min-width: 701px) and (max-width: 1280px){	
+.mainmenu {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	margin-left: $logosize * 3;
+}	
+.menuitem {
+	display: inline-block;
+	list-style: none;
+	&:hover {
+		background-color: $color-main;
+	}
+}
+.menuitem a {
+	display: inline-block;
+	vertical-align: top;
+	border-bottom: $menuborder solid $color-main;
+	transition: border-bottom-color, .8s;
+	&:hover {
+		background-color: $color-main;
+		border-bottom-color: $color-light;
+		transition: border-bottom-color, .3s;
+	}
+	&:active {
+		background-color: darken($color-main, 3%);
+		border-bottom-color: darken($color-light, 3%);
+		color: $color-bg;
+	}
+	&.current {
+		background-color: $color-light;
+		border-bottom-color: $color-light;
+	}
+	&.current:hover{
+		border-bottom-color: $color-main;
+		transition: border-bottom-color, .3s;
+	}
+	&.current:active{
+		background-color: darken($color-light, 3%);
+		border-bottom-color: darken($color-main, 3%);
+	}
+}	
+}
