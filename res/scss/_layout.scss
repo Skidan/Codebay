@@ -1,0 +1,44 @@
+html {
+  font-size: $basic;
+}
+/* +++INITIAL PARAMS + STICKY FOOTER+++ */
+html, body, .wrapper, .wrapmain {
+  height: 100%;
+  width: 100%;
+}
+.wrapper {
+  display: table;
+}
+.wraphead, .wrapmain, .wrapfoot {
+  display: table-row;
+  width: 100%;
+}
+
+.mainmenu_link,
+.breadcrumbs_link,
+.search_input,
+.search_submit,
+.footlink_link,
+#lang
+{font-size: $basic;}
+/* ---INITIAL PARAMS + STICKY FOOTER--- */
+
+.header, .main, .footer {
+  margin: 0 auto;
+  width: $w960;//temp
+  //height: $logo-width;//temp
+  //background-color: $color-main;//temp
+}
+.logo {
+  width: $logo-width;
+  height: $logo-width;//temp
+  display: inline-block;//temp
+  vertical-align: top;//temp
+}
+.menuwrap {
+  display: inline-block;
+  vertical-align: top;
+  height: $logo-width;
+  width: $w960 - $logo-width;
+  //background-color: violet;
+}

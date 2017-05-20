@@ -1,0 +1,28 @@
+// V A R I A B L E S
+//colors
+$color-main: #1f3948;
+$color-light: #127e9b;
+$color-dark: #002a35;
+$color-contrast: #900;
+$color-bg: #e9eaec;
+$color-bgdark: #c2c3c4;
+$gradient-main: linear-gradient(to bottom, $color-light, lighten($color-main, 10%) 48%, lighten($color-main, 5%) 52%, $color-dark);
+$gradient-bg: linear-gradient(to bottom, white , $color-bg 49%, lighten($color-bgdark, 10%) 51%, $color-bgdark);
+$bg-img: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAKCAMAAABL52QCAAAABlBMVEXCw8Tp6uwFw7MwAAAAF0lEQVR4AWNgYAQCCMEAIoAQgkA8/LIABOwAKWIaZEkAAAAASUVORK5CYII=);
+
+//common
+$basic: 16px;
+
+//text
+$sans-serif: 'Segoe UI', Segoe, 'Open Sans', Arial, Verdana, sans-serif;
+$serif: "Times New Roman", Times, Georgia, serif;
+$line-h: 1.5rem;
+//other
+* {outline: 1px dotted $color-contrast;}
+
+//calc
+$w720: 720px;
+$w960: 960px;
+$min720: $w720 / 3;
+$min960: $w960 / 3;
+$logo-width: $basic * 7;
