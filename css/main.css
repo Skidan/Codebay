@@ -209,3 +209,208 @@ html, body, .wrapper, .wrapmain {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAKCAMAAABL52QCAAAABlBMVEXCw8Tp6uwFw7MwAAAAF0lEQVR4AWNgYAQCCMEAIoAQgkA8/LIABOwAKWIaZEkAAAAASUVORK5CYII=);
   font-size: 16px;
 }
+
+.mainmenu {
+  display: block;
+}
+
+.mainmenu_btn {
+  display: none;
+}
+
+@media screen and (max-width: 480px) {
+  .mainmenu_btn {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    line-height: 28px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin: .5rem;
+    color: #e9eaec;
+    border-radius: .5rem;
+    background-color: #27475a;
+  }
+  .mainmenu_btn:hover {
+    background-color: #127e9b;
+    cursor: pointer;
+    box-shadow: 0 0 0.5rem #101d24;
+  }
+  .mainmenu_btn::selection {
+    background: transparent;
+  }
+}
+
+.mainmenu_list {
+  display: block;
+}
+
+@media screen and (max-width: 480px) {
+  .mainmenu_list {
+    display: none;
+  }
+}
+
+.mainmenu_item {
+  display: block;
+  text-align: center;
+  background-color: #1f3948;
+}
+
+.mainmenu_item:hover {
+  background-color: #127e9b;
+}
+
+@media screen and (max-width: 480px) {
+  .mainmenu_item {
+    transition: background .3s;
+    text-align: left;
+  }
+  .mainmenu_item:hover {
+    transition: background .5s;
+  }
+}
+
+.mainmenu_link {
+  display: block;
+  font-size: 16px;
+  line-height: 48px;
+  padding: 8px;
+  color: #e9eaec;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.mainmenu_link:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+  .mainmenu_link:active {
+    color: #e9eaec;
+  }
+}
+
+.mainmenu_link__current {
+  display: block;
+  font-size: 16px;
+  line-height: 48px;
+  padding: 8px;
+  color: #e9eaec;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.mainmenu_link__current:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 480px) {
+  .mainmenu__show {
+    font-size: 16px;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 128px;
+    vertical-align: top;
+    list-style: none;
+    background: #1f3948;
+    box-shadow: 0 0.2rem 0.8rem #101d24;
+  }
+}
+
+/* smallest styles - mobile */
+/* medium styles - tab - approximately */
+@media screen and (min-width: 481px) and (max-width: 700px) {
+  .mainmenu_list {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+  }
+  .mainmenu_item {
+    display: inline-block;
+    list-style: none;
+  }
+  .mainmenu_item:hover {
+    background-color: #1f3948;
+  }
+  .mainmenu_link {
+    display: inline-block;
+    vertical-align: top;
+    border-bottom: 8px solid #1f3948;
+    transition: border-bottom-color, .8s;
+  }
+  .mainmenu_link:hover {
+    background-color: #1f3948;
+    border-bottom-color: #127e9b;
+    transition: border-bottom-color, .3s;
+  }
+  .mainmenu_link:active {
+    background-color: #1a313d;
+    border-bottom-color: #10738d;
+    color: #e9eaec;
+  }
+  .mainmenu_link__current {
+    background-color: #127e9b;
+    border-bottom-color: #127e9b;
+  }
+  .mainmenu_link__current:hover {
+    border-bottom-color: #1f3948;
+    transition: border-bottom-color, .3s;
+  }
+  .mainmenu_link__current:active {
+    background-color: #10738d;
+    border-bottom-color: #1a313d;
+  }
+}
+
+/* big tabs & comp in window mode */
+@media screen and (min-width: 701px) and (max-width: 1280px) {
+  .mainmenu_list {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+  }
+  .mainmenu_item {
+    display: inline-block;
+    list-style: none;
+  }
+  .mainmenu_item:hover {
+    background-color: #1f3948;
+  }
+  .mainmenu_link {
+    display: inline-block;
+    vertical-align: top;
+    border-bottom: 8px solid #1f3948;
+    transition: border-bottom-color, .8s;
+  }
+  .mainmenu_link:hover {
+    background-color: #1f3948;
+    border-bottom-color: #127e9b;
+    transition: border-bottom-color, .3s;
+  }
+  .mainmenu_link:active {
+    background-color: #1a313d;
+    border-bottom-color: #10738d;
+    color: #e9eaec;
+  }
+  .mainmenu_link__current {
+    background-color: #127e9b;
+    border-bottom-color: #127e9b;
+  }
+  .mainmenu_link__current:hover {
+    border-bottom-color: #1f3948;
+    transition: border-bottom-color, .3s;
+  }
+  .mainmenu_link__current:active {
+    background-color: #10738d;
+    border-bottom-color: #1a313d;
+  }
+}
