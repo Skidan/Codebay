@@ -53,15 +53,33 @@ html, body, .wrapper, .wrapmain {
   }
 }
 
-@media screen and (min-width: 990px) and (max-width: 2039px) {
+@media screen and (min-width: 990px) and (max-width: 1229px) {
   .header, .main, .footer {
     width: 960px;
   }
 }
 
-@media screen and (min-width: 2040px) {
+@media screen and (min-width: 1230px) and (max-width: 1469px) {
   .header, .main, .footer {
     width: 1200px;
+  }
+}
+
+@media screen and (min-width: 1470px) and (max-width: 1629px) {
+  .header, .main, .footer {
+    width: 1440px;
+  }
+}
+
+@media screen and (min-width: 1630px) and (max-width: 2039px) {
+  .header, .main, .footer {
+    width: 1600px;
+  }
+}
+
+@media screen and (min-width: 2040px) {
+  .header, .main, .footer {
+    width: 2000px;
   }
 }
 
@@ -131,7 +149,7 @@ html, body, .wrapper, .wrapmain {
   }
 }
 
-@media screen and (min-width: 990px) and (max-width: 2039px) {
+@media screen and (min-width: 990px) and (max-width: 1229px) {
   .menuwrap {
     margin: 0;
     display: inline-block;
@@ -142,12 +160,45 @@ html, body, .wrapper, .wrapmain {
   }
 }
 
+@media screen and (min-width: 1230px) and (max-width: 1469px) {
+  .menuwrap {
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 1072px;
+    height: 128px;
+    background-color: darkgreen;
+  }
+}
+
+@media screen and (min-width: 1470px) and (max-width: 1629px) {
+  .menuwrap {
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 1312px;
+    height: 128px;
+    background-color: darkgreen;
+  }
+}
+
+@media screen and (min-width: 1630px) and (max-width: 2039px) {
+  .menuwrap {
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 1472px;
+    height: 128px;
+    background-color: darkgreen;
+  }
+}
+
 @media screen and (min-width: 2040px) {
   .menuwrap {
     margin: 0;
     display: inline-block;
     vertical-align: top;
-    width: 1040px;
+    width: 1840px;
     height: 160px;
     background-color: darkslategrey;
   }
