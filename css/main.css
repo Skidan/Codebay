@@ -39,22 +39,9 @@ html, body, .wrapper, .wrapmain {
   font-size: 16px;
 }
 
-/* ---INITIAL PARAMS + STICKY FOOTER--- */
-.breadcrumb, .search, .sideleft, .content, .sideright, .footlink, .teaser-article, .teaser-gallery, .contacts, .logo, .menuwrap {
-  display: block;
-  margin: 0 auto;
-  width: 100%;
-}
-
-/*@media screen and (min-width: 300px) {
-	.logo {
-		width: $logo-width;
-		height: $basic * 3;//temp
-		display: inline-block;//temp
-		vertical-align: top;//temp
-	}
-}*/
-.header, .main, .footer {
+.header, .main, .footer, .logoplace, .menuwrap, .breadcrumb, .search, .sideleft, .content,
+.sideright, .footlink, .teaser-article,
+.teaser-gallery, .contacts {
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -72,27 +59,100 @@ html, body, .wrapper, .wrapmain {
   }
 }
 
-@media screen and (min-width: 2039px) {
+@media screen and (min-width: 2040px) {
   .header, .main, .footer {
     width: 1200px;
   }
 }
 
-/*@media screen and (min-width: 750px) and (max-width: 989px) {
-	.header, .main, .footer {
-		width: $w720;
-	}
+@media screen and (min-width: 230px) and (max-width: 459px) {
+  .logoplace {
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 128px;
+    height: 48px;
+    background-color: violet;
+  }
 }
+
+@media screen and (min-width: 460px) and (max-width: 749px) {
+  .logoplace {
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 192px;
+    height: 64px;
+    background-color: violet;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 2039px) {
+  .logoplace {
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 128px;
+    height: 128px;
+    background-color: purple;
+  }
+}
+
+@media screen and (min-width: 2040px) {
+  .logoplace {
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 160px;
+    height: 160px;
+    background-color: darkred;
+  }
+}
+
+@media screen and (min-width: 230px) and (max-width: 749px) {
+  .menuwrap {
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: auto;
+    height: 48px;
+    background-color: lightgreen;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 989px) {
+  .menuwrap {
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 592px;
+    height: 128px;
+    background-color: green;
+  }
+}
+
 @media screen and (min-width: 990px) and (max-width: 2039px) {
-	.header, .main, .footer {
-		width: $w960;
-	}
+  .menuwrap {
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 832px;
+    height: 128px;
+    background-color: darkgreen;
+  }
 }
-@media screen and (min-width: 2039px) {
-	.header, .main, .footer {
-		width: $w960 * 1.25;
-	}
-}*/
+
+@media screen and (min-width: 2040px) {
+  .menuwrap {
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+    width: 1040px;
+    height: 160px;
+    background-color: darkslategrey;
+  }
+}
+
 .wrapper {
   background-color: #e9eaec;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAKCAMAAABL52QCAAAABlBMVEXCw8Tp6uwFw7MwAAAAF0lEQVR4AWNgYAQCCMEAIoAQgkA8/LIABOwAKWIaZEkAAAAASUVORK5CYII=);

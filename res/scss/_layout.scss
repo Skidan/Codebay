@@ -13,7 +13,7 @@ html, body, .wrapper, .wrapmain {
   display: table-row;
   width: 100%;
 }
-//----
+//SHOW TEXT IN FIELDS BELOW:
 .mainmenu_link,
 .breadcrumbs_link,
 .search_input,
@@ -21,58 +21,95 @@ html, body, .wrapper, .wrapmain {
 .footlink_link,
 #lang
 {font-size: $basic;}
-/* ---INITIAL PARAMS + STICKY FOOTER--- */
 
-.breadcrumb, .search, .sideleft, .content, .sideright, .footlink, .teaser-article, .teaser-gallery, .contacts, .logo, .menuwrap {
+.header, .main, .footer, .logoplace, .menuwrap, .breadcrumb, .search, .sideleft, .content, 
+.sideright, .footlink, .teaser-article, 
+.teaser-gallery, .contacts {
   display: block;
 	margin: 0 auto;
   width: 100%;
-  //height: $logo-width;//temp
-  //background-color: $color-main;//temp
 }
-
-//----insert in media-query 320-720 later
-
-
 //-----------------------------------------------
 // MEDIA QUERIES
 //-----------------------------------------------
-/*@media screen and (min-width: 300px) {
-	.logo {
-		width: $logo-width;
-		height: $basic * 3;//temp
-		display: inline-block;//temp
-		vertical-align: top;//temp
-	}
-}*/
 
 .header, .main, .footer {
-  display: block;
-	margin: 0 auto;
-  width: 100%;
 	@media screen and (min-width: 750px) and (max-width: 989px) {
-		width: $w720;
+		width: $main-small;
 	}
 	@media screen and (min-width: 990px) and (max-width: 2039px) {
-		width: $w960;
+		width: $main-middle;
 	}
-	@media screen and (min-width: 2039px) {
-		width: $w960 * 1.25;
+	@media screen and (min-width: 2040px) {
+		width: 1200px;
+	}
+}
+.logoplace {
+	@media screen and (min-width: 230px) and (max-width: 459px) {
+		margin: 0;
+		display: inline-block;
+		vertical-align: top;
+		width: $smallogo-width;
+		height: $basic * 3;
+		background-color: violet; //temp
+	}
+	@media screen and (min-width: 460px) and (max-width: 749px) {
+		margin: 0;
+		display: inline-block;
+		vertical-align: top;
+		width: $middlelogo-width;
+		height: $basic * 4;
+		background-color: violet; //temp
+	}
+	@media screen and (min-width: 750px) and (max-width: 2039px) {
+		margin: 0;
+		display: inline-block;
+		vertical-align: top;
+		width: $smallogo-width;
+		height: $smallogo-width;
+		background-color: purple; //temp
+	}
+	@media screen and (min-width: 2040px) {
+		margin: 0;
+		display: inline-block;
+		vertical-align: top;
+		width: $biglogo-width;
+		height: $biglogo-width;
+		background-color: darkred; //temp
 	}
 }
 
-/*@media screen and (min-width: 750px) and (max-width: 989px) {
-	.header, .main, .footer {
-		width: $w720;
+.menuwrap {
+	@media screen and (min-width: 230px) and (max-width: 749px) {
+		margin: 0;
+		display: inline-block;
+		vertical-align: top;
+		width: auto;
+		height: $basic * 3; //temp
+		background-color: lightgreen; //temp
+	}
+	@media screen and (min-width: 750px) and (max-width: 989px) {
+		margin: 0;
+		display: inline-block;
+		vertical-align: top;
+		width: $main-small - $smallogo-width;
+		height: $smallogo-width;
+		background-color: green; //temp
+	}
+	@media screen and (min-width: 990px) and (max-width: 2039px) {
+		margin: 0;
+		display: inline-block;
+		vertical-align: top;
+		width: $main-middle - $smallogo-width;
+		height: $smallogo-width;
+		background-color: darkgreen; //temp
+	}
+	@media screen and (min-width: 2040px) {
+		margin: 0;
+		display: inline-block;
+		vertical-align: top;
+		width: $main-big - $biglogo-width;
+		height: $biglogo-width;
+		background-color: darkslategrey; //temp
 	}
 }
-@media screen and (min-width: 990px) and (max-width: 2039px) {
-	.header, .main, .footer {
-		width: $w960;
-	}
-}
-@media screen and (min-width: 2039px) {
-	.header, .main, .footer {
-		width: $w960 * 1.25;
-	}
-}*/
