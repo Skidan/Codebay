@@ -13,7 +13,7 @@ html, body, .wrapper, .wrapmain {
   display: table-row;
   width: 100%;
 }
-
+//----
 .mainmenu_link,
 .breadcrumbs_link,
 .search_input,
@@ -23,44 +23,42 @@ html, body, .wrapper, .wrapmain {
 {font-size: $basic;}
 /* ---INITIAL PARAMS + STICKY FOOTER--- */
 
-.header, .main, .footer {
-  margin: 0 auto;
+.header, .main, .footer, .breadcrumb, .search, .sideleft, .content, .sideright, .footlink, .teaser-article, .teaser-gallery, .contacts, .logo, .menuwrap {
+  display: block;
+	margin: 0 auto;
   width: 100%;
   //height: $logo-width;//temp
   //background-color: $color-main;//temp
 }
-.logo {
-  width: $logo-width;
-  height: $logo-width;//temp
-  display: inline-block;//temp
-  vertical-align: top;//temp
-}
-.menuwrap {
-  display: inline-block;
-  vertical-align: top;
-  height: $logo-width;
-  width: $w960 - $logo-width;
-  //background-color: violet;
-}
+
+//----insert in media-query 320-720 later
+
 
 //-----------------------------------------------
 // MEDIA QUERIES
 //-----------------------------------------------
-
-@media screen and (min-width: 720px) and (max-width: 960px) {
-  .header, .main, .footer {
-    width: 720px;
-  }
-  .menuwrap {
-    width: $w720 - $logo-width;
-  }
+@media screen and (min-width: 180px) {
+	.logo {
+		width: $logo-width;
+		height: $logo-width;//temp
+		display: inline-block;//temp
+		vertical-align: top;//temp
+	}
+	.menuwrap {
+		display: inline-block;
+		vertical-align: top;
+		height: $logo-width;
+		width: $w960 - $logo-width;
+		//background-color: violet;
+	}
 }
 
-@media screen and (min-width: 961px) {
-  .header, .main, .footer {
-    width: 960px;
-  }
-  .menuwrap {
-    width: $w960 - $logo-width;
-  }
-}
+@media screen and (min-width: 750px) and (max-width: 989px) {}
+
+@media screen and (min-width: 990px) and (max-width: 1229px) {}
+
+@media screen and (min-width: 1230px) and (max-width: 1469px) {}
+
+@media screen and (min-width: 1470px) and (max-width: 1629px) {}
+
+@media screen and (min-width: 1630px) {}
