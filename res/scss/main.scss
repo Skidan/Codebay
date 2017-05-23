@@ -1,6 +1,11 @@
+/* globals & common */
 @import "reset";
 @import "_var";
 @import "_layout";
 @import "_styles";
+/* blocks */
 @import "_mainmenu";
 @import "_options";
+@import "_breadcrumbs";
+@import "_search";
+@import "_submenu";

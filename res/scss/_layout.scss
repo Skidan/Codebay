@@ -8,6 +8,7 @@ html, body, .wrapper, .wrapmain {
 }
 .wrapper {
   display: table;
+  min-width: 120px;
 }
 .wraphead, .wrapmain, .wrapfoot {
   display: table-row;
@@ -137,4 +138,22 @@ html, body, .wrapper, .wrapmain {
 		//height: $biglogo-width;
 		background-color: darkslategrey; //temp
 	}
+}
+.breadcrumbs, .search {
+  display: block;
+  @media screen and (max-width: 479px) {
+    display: none;
+  }
+  @media screen and (min-width: 480px) and (max-width: 749px) {
+    display: block;
+  }
+  @media screen and (min-width: 750px) {
+    display: inline-block;
+    vertical-align: top;
+  }
+}
+
+.search {
+	width: auto;
+	float: right;
 }

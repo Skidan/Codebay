@@ -35,15 +35,19 @@
 .mainmenu_item {
 	display: block;
 	text-align: center;
+	@media screen and (min-width: 481px) {
+		display: inline-block;
+	}
 }
 .mainmenu_link {
 	display: block;
-	line-height: $basic * 2;
+	line-height: $basic * 3;
 	padding: 0 $basic;
 	background-color: $color-main;
 	color: $color-bg;
 	font-family: $sans-serif;
 	text-decoration: none;
+	
 }
 .mainmenu_link__current {
 	background-color: $color-light;
