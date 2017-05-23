@@ -1,188 +1,55 @@
+
+/*0 - 480 px: mobile*/
+
 .mainmenu {
 	display: block;
-  //position: relative;
+	position: relative;
+
 }
 .mainmenu_btn {
 	display: none;
-  @media screen and (max-width: 480px) {
-    display: inline-block;
-		vertical-align: top;
-		position: absolute;
-		right: 0;
-		top: 0;
-		width: $basic * 3;
-		height: $basic * 3;
-		line-height: $basic * 1.75;
-		font-size: $basic * 2;
-		font-weight: bold;
-		text-align: center;
+	@media screen and (max-width: 480px) {
 		display: inline-block;
-		vertical-align: top;
-		margin: .5rem;
+		position: absolute;
+		top: $basic / 2;
+		right: $basic / 2;
+		width: $basic * 2;
+		height: $basic * 2;
 		color: $color-bg;
-		border-radius: .5rem;
-		background-color: lighten($color-main, 5%);
-		&:hover {
-			background-color: $color-light;
-			cursor: pointer;
-			box-shadow: 0 0 .5rem darken($color-main, 10%);
-		}
-		&::selection {
-			background: transparent;
-		}
-  }
+		background-color: $color-main;
+		line-height: $basic * 2;
+		border: 1px solid $color-light;
+		border-radius: $basic / 4;
+		text-align: center;
+		cursor: pointer;
+	}
 }
 .mainmenu_list {
-  display: block;
-  @media screen and (max-width: 480px) {
-    display: none;
-  }
+	display: block;
+	list-style: none;
+	@media screen and (max-width: 480px) {
+		display: none;
+	}
 }
 .mainmenu_item {
 	display: block;
 	text-align: center;
-	background-color: $color-main;
-	&:hover {
-		background-color: $color-light;
-	}
-  @media screen and (max-width: 480px) {
-    transition: background .3s;
-		text-align: left;
-		&:hover {
-			transition: background .5s;
-		}
-  }
 }
 .mainmenu_link {
 	display: block;
-	font-size: $basic;
-	line-height: $basic * 3;
-	padding: $basic / 2;
+	line-height: $basic * 2;
+	padding: 0 $basic;
+	background-color: $color-main;
 	color: $color-bg;
+	font-family: $sans-serif;
 	text-decoration: none;
-	text-transform: uppercase;
-	&:hover {
-		text-decoration: none;
-	}
-  @media screen and (max-width: 480px) {
-    &:active {
-			color: $color-bg;
-		}
-  }
 }
 .mainmenu_link__current {
-  display: block;
-	font-size: $basic;
-	line-height: $basic * 3;
-	padding: $basic / 2;
-	color: $color-bg;
-	text-decoration: none;
-	text-transform: uppercase;
-	&:hover {
-		text-decoration: none;
-	}
+	background-color: $color-light;
 }
 .mainmenu__show {
-  @media screen and (max-width: 480px) {
-    font-size: $basic;
-		display: inline-block;
-		position: absolute;
-		//right: 0;
-		//top: $smallogo-width;
-		vertical-align: top;
-		list-style: none;
-		background: $color-main;
-		//box-shadow: 0 .2rem .8rem darken($color-main, 10%);
-  }
-}
-/* smallest styles - mobile */
-
-/* medium styles - tab - approximately */
-@media screen and (min-width: 481px) and (max-width: 700px){	
-	.mainmenu_list {
-		display: inline-block;
-		vertical-align: top;
-		//float: right;
-		//position: relative;
-	}	
-	.mainmenu_item {
-		display: inline-block;
-		list-style: none;
-		&:hover {
-			background-color: $color-main;
-		}
-	}
-	.mainmenu_link {
-		display: inline-block;
-		vertical-align: top;
-		border-bottom: $menuborder solid $color-main;
-		//transition: border-bottom-color, .8s;
-		&:hover {
-			background-color: $color-main;
-			border-bottom-color: $color-light;
-			//transition: border-bottom-color, .3s;
-		}
-		&:active {
-			background-color: darken($color-main, 3%);
-			border-bottom-color: darken($color-light, 3%);
-			color: $color-bg;
-		}
-	}
-	.mainmenu_link__current {
-		background-color: $color-light;
-		border-bottom-color: $color-light;
-		&:hover{
-			border-bottom-color: $color-main;
-			//transition: border-bottom-color, .3s;
-		}
-		&:active{
-			background-color: darken($color-light, 3%);
-			border-bottom-color: darken($color-main, 3%);
-		}
-	}
-}
-
-/* big tabs & comp in window mode */
-@media screen and (min-width: 701px) and (max-width: 1280px){	
-	.mainmenu_list {
-		display: inline-block;
-		vertical-align: top;
-		position: relative;
-		//margin-left: $smallogo-width * 3;
-	}	
-	.mainmenu_item {
-		display: inline-block;
-		list-style: none;
-		&:hover {
-			background-color: $color-main;
-		}
-	}
-	.mainmenu_link {
-		display: inline-block;
-		vertical-align: top;
-		border-bottom: $menuborder solid $color-main;
-		transition: border-bottom-color, .8s;
-		&:hover {
-			background-color: $color-main;
-			border-bottom-color: $color-light;
-			transition: border-bottom-color, .3s;
-		}
-		&:active {
-			background-color: darken($color-main, 3%);
-			border-bottom-color: darken($color-light, 3%);
-			color: $color-bg;
-		}
-	}	
-	.mainmenu_link__current {
-		background-color: $color-light;
-		border-bottom-color: $color-light;
-		&:hover{
-			border-bottom-color: $color-main;
-			transition: border-bottom-color, .3s;
-		}
-		&:active{
-			background-color: darken($color-light, 3%);
-			border-bottom-color: darken($color-main, 3%);
-		}
-	}
+	display: block;
+	position: absolute;
+	top: $basic * 2;
+	right: 0;
 }
