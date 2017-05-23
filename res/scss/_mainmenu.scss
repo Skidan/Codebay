@@ -18,7 +18,8 @@
 		color: $color-bg;
 		background-color: $color-main;
 		line-height: $basic * 2;
-		border: 1px solid $color-light;
+		font-size: $basic * 1.25;
+		font-weight: bold;
 		border-radius: $basic / 4;
 		text-align: center;
 		cursor: pointer;
@@ -50,6 +51,6 @@
 .mainmenu__show {
 	display: block;
 	position: absolute;
-	top: $basic * 2;
+	top: $basic * 3;
 	right: 0;
 }

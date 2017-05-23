@@ -215,7 +215,8 @@ html, body, .wrapper, .wrapmain {
     color: #e9eaec;
     background-color: #1f3948;
     line-height: 32px;
-    border: 1px solid #127e9b;
+    font-size: 20px;
+    font-weight: bold;
     border-radius: 4px;
     text-align: center;
     cursor: pointer;
@@ -255,6 +256,10 @@ html, body, .wrapper, .wrapmain {
 .mainmenu__show {
   display: block;
   position: absolute;
-  top: 32px;
+  top: 48px;
   right: 0;
+}
+
+.options {
+  display: none;
 }
