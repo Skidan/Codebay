@@ -10,8 +10,8 @@
 		position: absolute;
 		right: 0;
 		top: 0;
-		width: $basic * 2;
-		height: $basic * 2;
+		width: $basic * 3;
+		height: $basic * 3;
 		line-height: $basic * 1.75;
 		font-size: $basic * 2;
 		font-weight: bold;
@@ -87,12 +87,12 @@
     font-size: $basic;
 		display: inline-block;
 		position: absolute;
-		right: 0;
-		top: $smallogo-width;
+		//right: 0;
+		//top: $smallogo-width;
 		vertical-align: top;
 		list-style: none;
 		background: $color-main;
-		box-shadow: 0 .2rem .8rem darken($color-main, 10%);
+		//box-shadow: 0 .2rem .8rem darken($color-main, 10%);
   }
 }
 /* smallest styles - mobile */
@@ -103,7 +103,7 @@
 		display: inline-block;
 		vertical-align: top;
 		//float: right;
-		position: relative;
+		//position: relative;
 	}	
 	.mainmenu_item {
 		display: inline-block;
@@ -116,11 +116,11 @@
 		display: inline-block;
 		vertical-align: top;
 		border-bottom: $menuborder solid $color-main;
-		transition: border-bottom-color, .8s;
+		//transition: border-bottom-color, .8s;
 		&:hover {
 			background-color: $color-main;
 			border-bottom-color: $color-light;
-			transition: border-bottom-color, .3s;
+			//transition: border-bottom-color, .3s;
 		}
 		&:active {
 			background-color: darken($color-main, 3%);
@@ -133,7 +133,7 @@
 		border-bottom-color: $color-light;
 		&:hover{
 			border-bottom-color: $color-main;
-			transition: border-bottom-color, .3s;
+			//transition: border-bottom-color, .3s;
 		}
 		&:active{
 			background-color: darken($color-light, 3%);
