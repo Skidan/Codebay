@@ -1,0 +1,27 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible" content="ie=edge")
+		link(href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans" rel="stylesheet")
+		link(rel="stylesheet" href="css/main.css")
+		title CodeBay Owl
+	body
+		.wrapper
+			.wraphead
+				header.header
+					.logoplace
+						include logo
+					.menuwrap
+						include options
+						include mainmenu
+			.wrapmain
+				main.main
+					include breadcrumbs
+					include search
+					aside.sideleft
+					section.content
+					aside.sideright
+			.wrapfoot
+				include footer

@@ -16,17 +16,28 @@ html, body, .wrapper, .wrapmain {
 }
 //SHOW TEXT IN FIELDS BELOW:
 .mainmenu_link,
-.breadcrumbs_link,
-.search_input,
-.search_submit,
+// .breadcrumbs_link,
+// .search_input,
+// .search_submit,
 .footlink_link,
-#lang,
+// #lang,
 .mainmenu_btn
 {font-size: $basic;}
 
-.header, .main, .footer, .logoplace, .menuwrap, .breadcrumb, .search, .sideleft, .content, 
-.sideright, .footlink, .teaser-article, 
-.teaser-gallery, .contacts {
+.header, 
+.main, 
+.footer, 
+.logoplace, 
+.menuwrap, 
+// .breadcrumb, 
+// .search, 
+// .sideleft, 
+.content, 
+// .sideright, 
+.footlink, 
+.teaser-article, 
+.teaser-gallery, 
+.contacts {
   display: block;
 	margin: 0 auto;
   width: 100%;
@@ -62,7 +73,7 @@ html, body, .wrapper, .wrapmain {
 		vertical-align: top;
 		width: $smallogo-width;
 		height: $basic * 3;
-		background-color: violet; //temp
+		//background-color: violet; //temp
 	}
 	@media screen and (min-width: 750px) and (max-width: 2039px) {
 		margin: 0;
@@ -70,7 +81,7 @@ html, body, .wrapper, .wrapmain {
 		vertical-align: top;
 		width: $smallogo-width;
 		height: $smallogo-width;
-		background-color: purple; //temp
+		//background-color: purple; //temp
 	}
 	@media screen and (min-width: 2040px) {
 		margin: 0;
@@ -78,7 +89,7 @@ html, body, .wrapper, .wrapmain {
 		vertical-align: top;
 		width: $biglogo-width;
 		height: $biglogo-width;
-		background-color: darkred; //temp
+		//background-color: darkred; //temp
 	}
 }
 .menuwrap {
@@ -88,7 +99,7 @@ html, body, .wrapper, .wrapmain {
 		vertical-align: top;
 		width: calc(100% - 128px);
 		//height: $basic * 3; //temp
-		background-color: lightgreen; //temp
+		//background-color: lightgreen; //temp
 	}
 	@media screen and (min-width: 750px) and (max-width: 989px) {
 		margin: 0;
@@ -96,7 +107,7 @@ html, body, .wrapper, .wrapmain {
 		vertical-align: top;
 		width: $main-small - $smallogo-width;
 		//height: $smallogo-width;
-		background-color: green; //temp
+		//background-color: green; //temp
 	}
 	@media screen and (min-width: 990px) and (max-width: 1229px) {
 		margin: 0;
@@ -104,7 +115,7 @@ html, body, .wrapper, .wrapmain {
 		vertical-align: top;
 		width: $main-middle - $smallogo-width;
 		//height: $smallogo-width;
-		background-color: darkgreen; //temp
+		//background-color: darkgreen; //temp
 	}
 	@media screen and (min-width: 1230px) and (max-width: 1469px) {
 		margin: 0;
@@ -112,7 +123,7 @@ html, body, .wrapper, .wrapmain {
 		vertical-align: top;
 		width: $main-middle - $smallogo-width + $col-small;
 		//height: $smallogo-width;
-		background-color: darkgreen; //temp
+		//background-color: darkgreen; //temp
 	}
 	@media screen and (min-width: 1470px) and (max-width: 1629px) {
 		margin: 0;
@@ -120,7 +131,7 @@ html, body, .wrapper, .wrapmain {
 		vertical-align: top;
 		width: $main-middle - $smallogo-width + $col-small + $col-small;
 		height: $smallogo-width;
-		background-color: darkgreen; //temp
+		//background-color: darkgreen; //temp
 	}
 	@media screen and (min-width: 1630px) and (max-width: 2039px) {
 		margin: 0;
@@ -128,7 +139,7 @@ html, body, .wrapper, .wrapmain {
 		vertical-align: top;
 		width: $main-middle - $smallogo-width + $col-middle + $col-middle;
 		//height: $smallogo-width;
-		background-color: darkgreen; //temp
+		//background-color: darkgreen; //temp
 	}
 	@media screen and (min-width: 2040px) {
 		margin: 0;
@@ -136,10 +147,10 @@ html, body, .wrapper, .wrapmain {
 		vertical-align: top;
 		width: $main-big - $biglogo-width + $col-big + $col-big;
 		//height: $biglogo-width;
-		background-color: darkslategrey; //temp
+		//background-color: darkslategrey; //temp
 	}
 }
-.breadcrumbs, .search {
+.breadcrumbs {
   display: block;
   @media screen and (max-width: 479px) {
     display: none;
@@ -153,7 +164,4 @@ html, body, .wrapper, .wrapmain {
   }
 }
 
-.search {
-	width: auto;
-	float: right;
-}
+//.search {}

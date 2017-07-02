@@ -37,18 +37,21 @@ html, body, .wrapper, .wrapmain {
 }
 
 .mainmenu_link,
-.breadcrumbs_link,
-.search_input,
-.search_submit,
 .footlink_link,
-#lang,
 .mainmenu_btn {
   font-size: 16px;
 }
 
-.header, .main, .footer, .logoplace, .menuwrap, .breadcrumb, .search, .sideleft, .content,
-.sideright, .footlink, .teaser-article,
-.teaser-gallery, .contacts {
+.header,
+.main,
+.footer,
+.logoplace,
+.menuwrap,
+.content,
+.footlink,
+.teaser-article,
+.teaser-gallery,
+.contacts {
   display: block;
   margin: 0 auto;
   width: 100%;
@@ -97,7 +100,6 @@ html, body, .wrapper, .wrapmain {
     vertical-align: top;
     width: 128px;
     height: 48px;
-    background-color: violet;
   }
 }
 
@@ -108,7 +110,6 @@ html, body, .wrapper, .wrapmain {
     vertical-align: top;
     width: 128px;
     height: 128px;
-    background-color: purple;
   }
 }
 
@@ -119,7 +120,6 @@ html, body, .wrapper, .wrapmain {
     vertical-align: top;
     width: 160px;
     height: 160px;
-    background-color: darkred;
   }
 }
 
@@ -129,7 +129,6 @@ html, body, .wrapper, .wrapmain {
     display: inline-block;
     vertical-align: top;
     width: calc(100% - 128px);
-    background-color: lightgreen;
   }
 }
 
@@ -139,7 +138,6 @@ html, body, .wrapper, .wrapmain {
     display: inline-block;
     vertical-align: top;
     width: 592px;
-    background-color: green;
   }
 }
 
@@ -149,7 +147,6 @@ html, body, .wrapper, .wrapmain {
     display: inline-block;
     vertical-align: top;
     width: 832px;
-    background-color: darkgreen;
   }
 }
 
@@ -159,7 +156,6 @@ html, body, .wrapper, .wrapmain {
     display: inline-block;
     vertical-align: top;
     width: 1072px;
-    background-color: darkgreen;
   }
 }
 
@@ -170,7 +166,6 @@ html, body, .wrapper, .wrapmain {
     vertical-align: top;
     width: 1312px;
     height: 128px;
-    background-color: darkgreen;
   }
 }
 
@@ -180,7 +175,6 @@ html, body, .wrapper, .wrapmain {
     display: inline-block;
     vertical-align: top;
     width: 1472px;
-    background-color: darkgreen;
   }
 }
 
@@ -190,36 +184,30 @@ html, body, .wrapper, .wrapmain {
     display: inline-block;
     vertical-align: top;
     width: 1840px;
-    background-color: darkslategrey;
   }
 }
 
-.breadcrumbs, .search {
+.breadcrumbs {
   display: block;
 }
 
 @media screen and (max-width: 479px) {
-  .breadcrumbs, .search {
+  .breadcrumbs {
     display: none;
   }
 }
 
 @media screen and (min-width: 480px) and (max-width: 749px) {
-  .breadcrumbs, .search {
+  .breadcrumbs {
     display: block;
   }
 }
 
 @media screen and (min-width: 750px) {
-  .breadcrumbs, .search {
+  .breadcrumbs {
     display: inline-block;
     vertical-align: top;
   }
-}
-
-.search {
-  width: auto;
-  float: right;
 }
 
 .wrapper {
@@ -286,8 +274,9 @@ html, body, .wrapper, .wrapmain {
   padding: 0 16px;
   background-color: #1f3948;
   color: #e9eaec;
-  font-family: "Segoe UI", Segoe, "Open Sans", Arial, Verdana, sans-serif;
+  font-family: "Open Sans", sans-serif;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .mainmenu_link__current {

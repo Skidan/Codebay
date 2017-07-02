@@ -14,8 +14,8 @@ $bg-img: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAKCAMAAABL52QCA
 $basic: 16px;
 
 //text
-$sans-serif: 'Segoe UI', Segoe, 'Open Sans', Arial, Verdana, sans-serif;
-$serif: "Times New Roman", Times, Georgia, serif;
+$font-common: "Open Sans", sans-serif;
+$font-heading: "Josefin Sans", sans-serif;
 $line-h: 1.5rem;
 //other
 * {outline: 1px dotted $color-contrast;}

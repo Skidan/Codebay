@@ -45,9 +45,9 @@
 	padding: 0 $basic;
 	background-color: $color-main;
 	color: $color-bg;
-	font-family: $sans-serif;
+	font-family: $font-common;
 	text-decoration: none;
-	
+	text-transform: uppercase;
 }
 .mainmenu_link__current {
 	background-color: $color-light;
