@@ -27,7 +27,9 @@
 }
 .mainmenu_list {
 	display: block;
+	width: 100%;
 	list-style: none;
+	text-align: center;
 	@media screen and (max-width: 480px) {
 		display: none;
 	}

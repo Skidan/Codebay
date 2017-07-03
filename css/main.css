@@ -36,6 +36,10 @@ html, body, .wrapper, .wrapmain {
   width: 100%;
 }
 
+.wraphead, .wrapfoot {
+  background-color: #1f3948;
+}
+
 .mainmenu_link,
 .footlink_link,
 .mainmenu_btn {
@@ -55,6 +59,10 @@ html, body, .wrapper, .wrapmain {
   display: block;
   margin: 0 auto;
   width: 100%;
+}
+
+.header, .main, .footer {
+  position: relative;
 }
 
 @media screen and (min-width: 750px) and (max-width: 989px) {
@@ -217,6 +225,11 @@ html, body, .wrapper, .wrapmain {
 }
 
 /* blocks */
+.logoplace {
+  position: absolute;
+  background-color: #002a35;
+}
+
 /*0 - 480 px: mobile*/
 .mainmenu {
   display: block;
@@ -248,7 +261,9 @@ html, body, .wrapper, .wrapmain {
 
 .mainmenu_list {
   display: block;
+  width: 100%;
   list-style: none;
+  text-align: center;
 }
 
 @media screen and (max-width: 480px) {
