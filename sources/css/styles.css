@@ -1,0 +1,10 @@
+/* VARIABLES */
+/* MIXINS */
+/* common styles */
+body {
+  background: #e9eaec url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAKCAMAAABL52QCAAAABlBMVEXCw8Tp6uwFw7MwAAAAF0lEQVR4AWNgYAQCCMEAIoAQgkA8/LIABOwAKWIaZEkAAAAASUVORK5CYII=); }
+
+/* MAIN STYLES */
+#wrapper {
+  width: 769px;
+  margin: 0 auto; }
