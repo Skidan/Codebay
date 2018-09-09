@@ -2,7 +2,11 @@
 /* MIXINS */
 /* common styles */
 body {
-  background: #e9eaec url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAKCAMAAABL52QCAAAABlBMVEXCw8Tp6uwFw7MwAAAAF0lEQVR4AWNgYAQCCMEAIoAQgkA8/LIABOwAKWIaZEkAAAAASUVORK5CYII=); }
+  background: #e9eaec; }
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px; }
 
 /* MAIN STYLES */
 #wrapper {

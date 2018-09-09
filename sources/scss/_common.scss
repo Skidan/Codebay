@@ -1,5 +1,10 @@
 /* common styles */
 
 body {
-	background: $color-bg $bg-img;
+	background: $color-bg/* $bg-img*/;
+}
+
+p {
+	font-family: $font-regular;
+	font-size: $basic;
 }
