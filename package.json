@@ -6,26 +6,35 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Skidan/codebay.git"
+  },
   "keywords": [
     "codebay",
     "blog"
   ],
   "author": "Dmytro Skydanenko",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Skidan/codebay/issues"
+  },
+  "homepage": "https://github.com/Skidan/codebay#readme",
   "devDependencies": {
-    "bower": "^1.8.4",
-    "browser-sync": "^2.24.2",
+    "bower": "^1.8.8",
+    "browser-sync": "^2.26.3",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
-    "gulp-cache": "^1.0.2",
+    "gulp-cache": "^1.1.1",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.3",
     "gulp-imagemin": "^4.1.0",
     "gulp-pug": "^4.0.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^4.0.1",
+    "gulp-sass": "^4.0.2",
     "gulp-uglify": "^3.0.0",
     "imagemin-pngquant": "^5.1.0"
-  }
+  },
+  "dependencies": {}
 }

@@ -1,0 +1,14 @@
+/* VARIABLES */
+/* MIXINS */
+/* common styles */
+body {
+  background: #e9eaec; }
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px; }
+
+/* MAIN STYLES */
+#wrapper {
+  width: 800px;
+  margin: 0 auto; }

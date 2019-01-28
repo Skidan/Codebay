@@ -14,61 +14,73 @@ var gulp            = require('gulp'), // сам Галп
 
 // СБОРКА SASS/SCSS
 gulp.task('sass', function() {
-    return gulp.src('sources/scss/styles.scss') // Берем источник
+    return gulp.src([
+			'src/scss/*.+(sass|scss)',
+			'!src/scss/_*.*'
+		]) // Берем источник
     .pipe(sass()) //Преобразуем Sass в CSS посредством gulp-sass
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true })) // Создаем префиксы
-    .pipe(gulp.dest('sources/css')) // Выгружаем результата в папку src/css
+    .pipe(gulp.dest('src/preprod/css')) // Выгружаем результата в папку src/css
     .pipe(browserSync.reload({stream: true})) // Обновляем CSS на странице при изменении
 });
 
 // СЖАТИЕ CSS БИБЛИОТЕК
 gulp.task('css-libs', ['sass'], function() {
     return gulp.src([
-			'sources/assets/libraries/normalize.css/normalize.css',
-			'sources/assets/modules/*.css'
+			'src/assets/libs/normalize.css/normalize.css',
+			'src/assets/mods/**/*.css'
 		])
 		.pipe(concat('libs.min.css')) //конкатенируем
 		.pipe(cssnano()) // Сжимаем
-		.pipe(gulp.dest('sources/css')); // Выгружаем в папку app/css
+		.pipe(gulp.dest('src/preprod/css')); // Выгружаем в папку app/css
 });
 
 // СБОРКА PUG
 gulp.task('pug', function() {
 		return gulp.src([
-			'sources/pug/*.pug',
-			'!sources/pug/_*.*'
+			'src/pug/*.pug',
+			'!src/pug/_*.*'
 		])
 		.pipe(pug())
-		.pipe(gulp.dest('sources'))
+		.pipe(gulp.dest('src/preprod'))
 });
 
 // ПЕРЕЖАТИЕ БИБЛИОТЕК JS
 gulp.task('scripts', function() {
     return gulp.src([ // Берем все необходимые библиотеки
-			'sources/assets/libraries/jquery/dist/jquery.min.js' // jQuery
+			'src/assets/libs/jquery/dist/jquery.min.js' // jQuery
 		])
 		.pipe(concat('libs.min.js')) // Собираем их в кучу в новом файле libs.min.js
 		.pipe(uglify()) // Сжимаем JS файл
-		.pipe(gulp.dest('sources/js')); // Выгружаем в папку app/js
+		.pipe(gulp.dest('src/preprod/js')); // Выгружаем в папку app/js
 });
 
 // СИНХРОНИЗАЦИЯ БРАУЗЕРА
 gulp.task('browser-sync', function() {
     browserSync({
         server: {
-            baseDir: 'sources'
+            baseDir: 'src/preprod'
         },
         notify: false
     });
 });
 
+// Отслеживание и публикация скриптов
+gulp.task('jayass', function(){
+	return gulp.src([
+		'src/js/*.js'
+	])
+	.pipe(gulp.dest('src/preprod/js'));
+});
+
 
 // ШПИЁН
-gulp.task('watch', ['browser-sync', 'css-libs', 'pug', 'scripts'], function() {
-	gulp.watch('sources/scss/*.scss', ['sass']); //watch sass files
-	gulp.watch('sources/pug/*.pug', ['pug']); //watch pug files
-	gulp.watch('sources/*.html', browserSync.reload); // watch HTML files
-	gulp.watch('sources/js/**/*.js', browserSync.reload); // watch JS files
+gulp.task('watch', ['browser-sync', 'css-libs', 'pug', 'scripts', 'jayass'], function() {
+	gulp.watch('src/scss/*.scss', ['sass']); //watch sass files
+	gulp.watch('src/pug/*.pug', ['pug']); //watch pug files
+	gulp.watch('src/js/*.js', ['jayass']); // watch JS files
+	gulp.watch('src/preprod/*.html', browserSync.reload); // watch HTML files
+	gulp.watch('src/preprodjs/*.js', browserSync.reload); // watch JS files
 });
 
 // ПРОДАКШН:
@@ -78,7 +90,7 @@ gulp.task('clean', function() {
 });
 // imgs
 gulp.task('img', function() {
-	return gulp.src('sources/img/**/*') // Берем все изображения из sources
+	return gulp.src('src/img/**/*') // Берем все изображения из src
 		.pipe(cache(imagemin({  // Сжимаем их с наилучшими настройками с учетом кеширования
 			interlaced: true,
 			progressive: true,
@@ -88,23 +100,23 @@ gulp.task('img', function() {
 		.pipe(gulp.dest('public/img')); // Выгружаем на продакшен
 });
 // build
-gulp.task('build', ['clean', 'img', 'sass', 'pug', 'scripts'], function() {
+gulp.task('build', ['clean', 'img', 'sass', 'pug', 'jayass', 'scripts'], function() {
  
     var buildCss = gulp.src([ // Переносим библиотеки в продакшн
-			'sources/css/libs.min.css',
-			'sources/css/styles.css'			
+			'src/preprod/css/libs.min.css',
+			'src/preprod/css/styles.css'			
 		])
 		.pipe(concat('styles.css'))
     .pipe(gulp.dest('public/css'));
  
     var buildJs = gulp.src([ 
-			'sources/js/libs.min.js', // берём минимизированные библиотеки,
-			'sources/js/styles.js' // и наш несжатый скрипт для сайта
+			'src/preprod/js/libs.min.js', // берём минимизированные библиотеки,
+			'src/preprod/js/scripts.js' // и наш несжатый скрипт для сайта
 		])
-		.pipe(concat('styles.js')) // сливаем их в один файл
+		.pipe(concat('scripts.js')) // сливаем их в один файл
     .pipe(gulp.dest('public/js')); // и выгружаем в продакшн
  
-    var buildHtml = gulp.src('sources/*.html') // Переносим HTML в продакшн
+    var buildHtml = gulp.src('src/preprod/*.html') // Переносим HTML в продакшн
     .pipe(gulp.dest('public'));
  
 });
