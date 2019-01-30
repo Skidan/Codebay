@@ -55,7 +55,8 @@ blockquote {
   margin: $basic $basic * 3;
   padding: $basic/2 $basic/2 $basic/2 $basic;
   border-left: $basic/4 solid $color-light;
-  font-style: italic;
+	font-style: italic;
+	border-radius: 0 $basic $basic 0;
 }
 a {
   text-indent: 0;

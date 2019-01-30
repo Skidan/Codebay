@@ -1,5 +1,9 @@
 /* MAIN STYLES */
 
+#wrapper {
+	margin: 0 $basic / 2;
+}
+
 .button-inline {
   display: inline-block; // 2 lines - changing a type of an element...
   vertical-align: baseline;   // ...from inline to inline-block.

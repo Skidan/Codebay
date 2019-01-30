@@ -60,7 +60,9 @@ blockquote {
   margin: 16px 48px;
   padding: 8px 8px 8px 16px;
   border-left: 4px solid #127e9b;
-  font-style: italic; }
+  font-style: italic;
+  -webkit-border-radius: 0 16px 16px 0;
+          border-radius: 0 16px 16px 0; }
 
 a {
   text-indent: 0;
@@ -70,6 +72,9 @@ a {
     color: #900; }
 
 /* MAIN STYLES */
+#wrapper {
+  margin: 0 8px; }
+
 .button-inline {
   display: inline-block;
   vertical-align: baseline;
