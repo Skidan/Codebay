@@ -73,14 +73,24 @@ gulp.task('jayass', function(){
 	.pipe(gulp.dest('src/preprod/js'));
 });
 
+// Отслеживание и публикация изюбражений
+gulp.task('imgs', function(){
+	return gulp.src([
+		'src/img/*.*'
+	])
+	.pipe(gulp.dest('src/preprod/img'));
+});
+
 
 // ШПИЁН
 gulp.task('watch', ['browser-sync', 'css-libs', 'pug', 'scripts', 'jayass'], function() {
 	gulp.watch('src/scss/*.scss', ['sass']); //watch sass files
 	gulp.watch('src/pug/*.pug', ['pug']); //watch pug files
 	gulp.watch('src/js/*.js', ['jayass']); // watch JS files
+	gulp.watch('src/img/*.*', ['imgs']); // watch images
 	gulp.watch('src/preprod/*.html', browserSync.reload); // watch HTML files
-	gulp.watch('src/preprodjs/*.js', browserSync.reload); // watch JS files
+	gulp.watch('src/preprod/js/*.js', browserSync.reload); // watch JS files
+	gulp.watch('src/preprod/img/*.*', browserSync.reload); // reload page images
 });
 
 // ПРОДАКШН:
