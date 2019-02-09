@@ -1,3 +1,536 @@
-.wholeLogo {
+/*.codebaylogo {
   fill: #900;
-  fill-rule: nonzero; }
+  fill-rule: nonzero
+}*/
+.c {
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 30;
+  stroke-dasharray: 8409;
+  opacity: 1;
+  -webkit-animation: roundingC 4s infinite;
+          animation: roundingC 4s infinite; }
+
+@-webkit-keyframes roundingC {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 8409; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 8409; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+@keyframes roundingC {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 8409; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 8409; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+.o {
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 30;
+  stroke-dasharray: 6600;
+  opacity: 1;
+  -webkit-animation: roundingO 4s infinite;
+          animation: roundingO 4s infinite; }
+
+@-webkit-keyframes roundingO {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 6600; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 6600; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+@keyframes roundingO {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 6600; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 6600; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+.d {
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 30;
+  stroke-dasharray: 8400;
+  opacity: 1;
+  -webkit-animation: roundingD 4s infinite;
+          animation: roundingD 4s infinite; }
+
+@-webkit-keyframes roundingD {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 8400; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 8400; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+@keyframes roundingD {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 8400; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 8400; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+.e {
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 30;
+  stroke-dasharray: 10797;
+  opacity: 1;
+  -webkit-animation: roundingE 4s infinite;
+          animation: roundingE 4s infinite; }
+
+@-webkit-keyframes roundingE {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 10797; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 10797; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+@keyframes roundingE {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 10797; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 10797; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+.b {
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 30;
+  stroke-dasharray: 8300;
+  opacity: 1;
+  -webkit-animation: roundingB 4s infinite;
+          animation: roundingB 4s infinite; }
+
+@-webkit-keyframes roundingB {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 8300; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 8300; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+@keyframes roundingB {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 8300; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 8300; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+.a {
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 30;
+  stroke-dasharray: 9300;
+  opacity: 1;
+  -webkit-animation: roundingA 4s infinite;
+          animation: roundingA 4s infinite; }
+
+@-webkit-keyframes roundingA {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 9300; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 9300; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+@keyframes roundingA {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 9300; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 9300; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+.y {
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 30;
+  stroke-dasharray: 53514;
+  opacity: 1;
+  -webkit-animation: roundingY 4s infinite;
+          animation: roundingY 4s infinite; }
+
+@-webkit-keyframes roundingY {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 53514; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 53514; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+@keyframes roundingY {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 53514; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 53514; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+.overe {
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 30;
+  stroke-dasharray: 4007;
+  opacity: 1;
+  -webkit-animation: roundingOv 4s infinite;
+          animation: roundingOv 4s infinite; }
+
+@-webkit-keyframes roundingOv {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 4007; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 4007; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+@keyframes roundingOv {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 4007; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 4007; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+.wave1 {
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 30;
+  stroke-dasharray: 13077;
+  opacity: 1;
+  -webkit-animation: roundingW1 4s infinite;
+          animation: roundingW1 4s infinite; }
+
+@-webkit-keyframes roundingW1 {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 13077; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 13077; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+@keyframes roundingW1 {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 13077; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 13077; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+.wave2 {
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 30;
+  stroke-dasharray: 8364;
+  opacity: 1;
+  -webkit-animation: roundingW2 4s infinite;
+          animation: roundingW2 4s infinite; }
+
+@-webkit-keyframes roundingW2 {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 8364; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 8364; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+@keyframes roundingW2 {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 8364; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 8364; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+.wave3 {
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 30;
+  stroke-dasharray: 5426;
+  opacity: 1;
+  -webkit-animation: roundingW3 4s infinite;
+          animation: roundingW3 4s infinite; }
+
+@-webkit-keyframes roundingW3 {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 5426; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 5426; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+@keyframes roundingW3 {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 5426; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 5426; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+.wave4 {
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 30;
+  stroke-dasharray: 4393;
+  opacity: 1;
+  -webkit-animation: roundingW4 4s infinite;
+          animation: roundingW4 4s infinite; }
+
+@-webkit-keyframes roundingW4 {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 4393; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 4393; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+@keyframes roundingW4 {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 4393; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 4393; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+.wave5 {
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 30;
+  stroke-dasharray: 2729;
+  opacity: 1;
+  -webkit-animation: roundingW5 4s infinite;
+          animation: roundingW5 4s infinite; }
+
+@-webkit-keyframes roundingW5 {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 2729; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 2729; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }
+
+@keyframes roundingW5 {
+  0% {
+    opacity: 0;
+    fill: none;
+    stroke-dashoffset: 2729; }
+  30% {
+    opacity: 1;
+    fill: none;
+    stroke-dashoffset: 2729; }
+  75% {
+    fill: rgba(255, 255, 255, 0);
+    stroke-dashoffset: 0; }
+  100% {
+    opacity: 10;
+    fill: white; } }

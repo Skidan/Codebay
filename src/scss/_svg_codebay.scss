@@ -1,0 +1,387 @@
+
+
+/*.codebaylogo {
+  fill: #900;
+  fill-rule: nonzero
+}*/
+
+$lengthC: 8409;
+$lengthO: 6600; //10453
+$lengthD: 8400; //12283
+$lengthE: 10797;
+$lengthB: 8300; //12283
+$lengthA: 9300; //11978
+$lengthY: 53514;
+$lengthOver: 4007;
+$lengthW1: 13077;
+$lengthW2: 8364;
+$lengthW3: 5426;
+$lengthW4: 4393;
+$lengthW5: 2729;
+
+$animata: 4s infinite;
+
+.c {
+	fill: #fff;
+	stroke: #fff;
+	stroke-width: 30;
+	stroke-dasharray: $lengthC;
+	opacity: 1;
+	animation: roundingC $animata;
+}
+@keyframes roundingC {
+	0% {
+		opacity: 0;
+		fill: none;
+		stroke-dashoffset: $lengthC;
+	}
+	30% {
+		opacity: 1;
+		fill: none;
+		stroke-dashoffset: $lengthC;
+	}
+	75% {
+		fill: rgba(255,255,255,0);
+		stroke-dashoffset: 0;
+	}
+	100% {
+		opacity: 10;
+		fill: rgba(255,255,255,1);
+	}
+}
+.o {
+	fill: #fff;
+	stroke: #fff;
+	stroke-width: 30;
+	stroke-dasharray: $lengthO;
+	opacity: 1;
+	animation: roundingO $animata;
+}
+@keyframes roundingO {
+	0% {
+		opacity: 0;
+		fill: none;
+		stroke-dashoffset: $lengthO;
+	}
+	30% {
+		opacity: 1;
+		fill: none;
+		stroke-dashoffset: $lengthO;
+	}
+	75% {
+		fill: rgba(255,255,255,0);
+		stroke-dashoffset: 0;
+	}
+	100% {
+		opacity: 10;
+		fill: rgba(255,255,255,1);
+	}
+}
+.d {
+	fill: #fff;
+	stroke: #fff;
+	stroke-width: 30;
+	stroke-dasharray: $lengthD;
+	opacity: 1;
+	animation: roundingD $animata;
+}
+@keyframes roundingD {
+	0% {
+		opacity: 0;
+		fill: none;
+		stroke-dashoffset: $lengthD;
+	}
+	30% {
+		opacity: 1;
+		fill: none;
+		stroke-dashoffset: $lengthD;
+	}
+	75% {
+		fill: rgba(255,255,255,0);
+		stroke-dashoffset: 0;
+	}
+	100% {
+		opacity: 10;
+		fill: rgba(255,255,255,1);
+	}
+}
+.e {
+	fill: #fff;
+	stroke: #fff;
+	stroke-width: 30;
+	stroke-dasharray: $lengthE;
+	opacity: 1;
+	animation: roundingE $animata;
+}
+@keyframes roundingE {
+	0% {
+		opacity: 0;
+		fill: none;
+		stroke-dashoffset: $lengthE;
+	}
+	30% {
+		opacity: 1;
+		fill: none;
+		stroke-dashoffset: $lengthE;
+	}
+	75% {
+		fill: rgba(255,255,255,0);
+		stroke-dashoffset: 0;
+	}
+	100% {
+		opacity: 10;
+		fill: rgba(255,255,255,1);
+	}
+}
+.b {
+	fill: #fff;
+	stroke: #fff;
+	stroke-width: 30;
+	stroke-dasharray: $lengthB;
+	opacity: 1;
+	animation: roundingB $animata;
+}
+@keyframes roundingB {
+	0% {
+		opacity: 0;
+		fill: none;
+		stroke-dashoffset: $lengthB;
+	}
+	30% {
+		opacity: 1;
+		fill: none;
+		stroke-dashoffset: $lengthB;
+	}
+	75% {
+		fill: rgba(255,255,255,0);
+		stroke-dashoffset: 0;
+	}
+	100% {
+		opacity: 10;
+		fill: rgba(255,255,255,1);
+	}
+}
+.a {
+	fill: #fff;
+	stroke: #fff;
+	stroke-width: 30;
+	stroke-dasharray: $lengthA;
+	opacity: 1;
+	animation: roundingA $animata;
+}
+@keyframes roundingA {
+	0% {
+		opacity: 0;
+		fill: none;
+		stroke-dashoffset: $lengthA;
+	}
+	30% {
+		opacity: 1;
+		fill: none;
+		stroke-dashoffset: $lengthA;
+	}
+	75% {
+		fill: rgba(255,255,255,0);
+		stroke-dashoffset: 0;
+	}
+	100% {
+		opacity: 10;
+		fill: rgba(255,255,255,1);
+	}
+}
+.y {
+	fill: #fff;
+	stroke: #fff;
+	stroke-width: 30;
+	stroke-dasharray: $lengthY;
+	opacity: 1;
+	animation: roundingY $animata;
+}
+@keyframes roundingY {
+	0% {
+		opacity: 0;
+		fill: none;
+		stroke-dashoffset: $lengthY;
+	}
+	30% {
+		opacity: 1;
+		fill: none;
+		stroke-dashoffset: $lengthY;
+	}
+	75% {
+		fill: rgba(255,255,255,0);
+		stroke-dashoffset: 0;
+	}
+	100% {
+		opacity: 10;
+		fill: rgba(255,255,255,1);
+	}
+}
+.overe {
+	fill: #fff;
+	stroke: #fff;
+	stroke-width: 30;
+	stroke-dasharray: $lengthOver;
+	opacity: 1;
+	animation: roundingOv $animata;
+}
+@keyframes roundingOv {
+	0% {
+		opacity: 0;
+		fill: none;
+		stroke-dashoffset: $lengthOver;
+	}
+	30% {
+		opacity: 1;
+		fill: none;
+		stroke-dashoffset: $lengthOver;
+	}
+	75% {
+		fill: rgba(255,255,255,0);
+		stroke-dashoffset: 0;
+	}
+	100% {
+		opacity: 10;
+		fill: rgba(255,255,255,1);
+	}
+}
+.wave1 {
+	fill: #fff;
+	stroke: #fff;
+	stroke-width: 30;
+	stroke-dasharray: $lengthW1;
+	opacity: 1;
+	animation: roundingW1 $animata;
+}
+@keyframes roundingW1 {
+	0% {
+		opacity: 0;
+		fill: none;
+		stroke-dashoffset: $lengthW1;
+	}
+	30% {
+		opacity: 1;
+		fill: none;
+		stroke-dashoffset: $lengthW1;
+	}
+	75% {
+		fill: rgba(255,255,255,0);
+		stroke-dashoffset: 0;
+	}
+	100% {
+		opacity: 10;
+		fill: rgba(255,255,255,1);
+	}
+}
+.wave2 {
+	fill: #fff;
+	stroke: #fff;
+	stroke-width: 30;
+	stroke-dasharray: $lengthW2;
+	opacity: 1;
+	animation: roundingW2 $animata;
+}
+@keyframes roundingW2 {
+	0% {
+		opacity: 0;
+		fill: none;
+		stroke-dashoffset: $lengthW2;
+	}
+	30% {
+		opacity: 1;
+		fill: none;
+		stroke-dashoffset: $lengthW2;
+	}
+	75% {
+		fill: rgba(255,255,255,0);
+		stroke-dashoffset: 0;
+	}
+	100% {
+		opacity: 10;
+		fill: rgba(255,255,255,1);
+	}
+}
+.wave3 {
+	fill: #fff;
+	stroke: #fff;
+	stroke-width: 30;
+	stroke-dasharray: $lengthW3;
+	opacity: 1;
+	animation: roundingW3 $animata;
+}
+@keyframes roundingW3 {
+	0% {
+		opacity: 0;
+		fill: none;
+		stroke-dashoffset: $lengthW3;
+	}
+	30% {
+		opacity: 1;
+		fill: none;
+		stroke-dashoffset: $lengthW3;
+	}
+	75% {
+		fill: rgba(255,255,255,0);
+		stroke-dashoffset: 0;
+	}
+	100% {
+		opacity: 10;
+		fill: rgba(255,255,255,1);
+	}
+}
+.wave4 {
+	fill: #fff;
+	stroke: #fff;
+	stroke-width: 30;
+	stroke-dasharray: $lengthW4;
+	opacity: 1;
+	animation: roundingW4 $animata;
+}
+@keyframes roundingW4 {
+	0% {
+		opacity: 0;
+		fill: none;
+		stroke-dashoffset: $lengthW4;
+	}
+	30% {
+		opacity: 1;
+		fill: none;
+		stroke-dashoffset: $lengthW4;
+	}
+	75% {
+		fill: rgba(255,255,255,0);
+		stroke-dashoffset: 0;
+	}
+	100% {
+		opacity: 10;
+		fill: rgba(255,255,255,1);
+	}
+}
+.wave5 {
+	fill: #fff;
+	stroke: #fff;
+	stroke-width: 30;
+	stroke-dasharray: $lengthW5;
+	opacity: 1;
+	animation: roundingW5 $animata;
+}
+@keyframes roundingW5 {
+	0% {
+		opacity: 0;
+		fill: none;
+		stroke-dashoffset: $lengthW5;
+	}
+	30% {
+		opacity: 1;
+		fill: none;
+		stroke-dashoffset: $lengthW5;
+	}
+	75% {
+		fill: rgba(255,255,255,0);
+		stroke-dashoffset: 0;
+	}
+	100% {
+		opacity: 10;
+		fill: rgba(255,255,255,1);
+	}
+}
